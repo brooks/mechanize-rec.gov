@@ -10,6 +10,34 @@ class Bot
     @agent.get(CAMPGROUND_URL)
   end
 
+  def fetch_site!
+    self.enter_search_criteria
+    self.click_first_available_site
+    self.click_book_these_dates
+    self.enter_login_credentials
+    self.enter_site_details
+    self.proceed_to_checkout
+    # self.enter_billing_information
+  end
+
+  def print_links
+    @agent.page.links.each do |link|
+      puts link.href
+    end
+  end
+
+  def print_forms
+    @agent.page.forms[0].fields.each_with_index do |field, index|
+      puts "#{index}: #{field.name}"
+    end
+  end
+
+  def print_body
+    puts @agent.page.body
+  end
+  
+  private
+
   def change_value(field_num, new_value)
     @agent.page.forms[0].fields[field_num].value = new_value
   end
@@ -69,31 +97,6 @@ class Bot
     submit_form(0)
   end
 
-  def fetch_site!
-    self.enter_search_criteria
-    self.click_first_available_site
-    self.click_book_these_dates
-    self.enter_login_credentials
-    self.enter_site_details
-    self.proceed_to_checkout
-    # self.enter_billing_information
-  end
-
-  def print_links
-    @agent.page.links.each do |link|
-      puts link.href
-    end
-  end
-
-  def print_forms
-    @agent.page.forms[0].fields.each_with_index do |field, index|
-      puts "#{index}: #{field.name}"
-    end
-  end
-
-  def print_body
-    puts @agent.page.body
-  end
 end
 
 cyber_raccoon = Bot.new
