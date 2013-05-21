@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'mechanize'
 require 'open-uri'
-require_relative 'access'
+require_relative 'private/access'
 
 puts CARD_NO
 
