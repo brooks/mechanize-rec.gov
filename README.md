@@ -1,7 +1,13 @@
 yosemite-bum
 ============
 
-You'll have to create a top-level private directory with a file, 'access.rb' that contains the following constants:
+This program is still in development.  Use at your own risk.
+
+In it's current state, this program will choose the first site listed on recreation.gov that is listed in your array.
+
+The file is meant to be run at the specified times listed here: http://www.nps.gov/yose/planyourvisit/camping.htm
+
+You will need to uncomment line 20 in the .rb file and create private/access.rb with the constants listed below:
 
 LOWER_PINES = 'http://www.recreation.gov/camping/Lower_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70928&topTabIndex=Search'
 

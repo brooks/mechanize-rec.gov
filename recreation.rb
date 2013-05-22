@@ -11,13 +11,13 @@ class Bot
   end
 
   def fetch_site!
-    self.enter_search_criteria
-    self.click_first_available_site
-    self.click_book_these_dates
-    self.enter_login_credentials
-    self.enter_site_details
-    self.proceed_to_checkout
-    # self.enter_billing_information
+    enter_search_criteria
+    click_first_available_site
+    click_book_these_dates
+    enter_login_credentials
+    enter_site_details
+    proceed_to_checkout
+    # enter_billing_information
   end
 
   def print_links
@@ -35,7 +35,7 @@ class Bot
   def print_body
     puts @agent.page.body
   end
-  
+
   private
 
   def change_value(field_num, new_value)
@@ -101,4 +101,3 @@ end
 
 cyber_raccoon = Bot.new
 cyber_raccoon.fetch_site!
-cyber_raccoon.print_forms
