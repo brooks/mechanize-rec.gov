@@ -1,0 +1,36 @@
+<div class="container">
+  <div class='registration'>  
+    <h4>Enter your credentials</h4>
+    <div class="sign-in-view">
+      <%= form_tag("/verify", method: "post") do %>
+      <div>
+        <%= email_field_tag :email, nil, placeholder: "email", :autofocus => true %>
+      </div>
+      <div>
+        <%= password_field_tag :password, nil, placeholder: 'password' %>
+      </div>
+      <div>
+        <%= submit_tag "Sign in", id: 'reg-btn', class: 'btn' %>
+      </div>
+      <a class="toggle-reg" href="">Register</a>
+      <% end %>
+    </div>
+    <div class="reg-view">
+      <%= form_tag("/register", method: "post") do %>
+      <div>
+        <%= email_field_tag :email, nil, placeholder: "email", :autofocus => true %>
+      </div>
+      <div>
+        <%= password_field_tag :password, nil, placeholder: 'password' %>
+      </div>      
+      <div class>
+      <%= password_field_tag :key_code, nil, placeholder: 'invite code' %>
+      </div>
+      <div>
+      <%= submit_tag "Register", id: 'reg-btn', class: 'btn' %>
+      </div>
+      <a class="toggle-reg" href="">Sign in</a>
+      <% end %>
+    </div>
+  </div>
+</div>
