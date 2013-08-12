@@ -12,7 +12,8 @@ test/tmp
 test/version_tmp
 tmp
 private
-
+/db/*.sqlite3
+/log/*
 
 # YARD artifacts
 .yardoc
