@@ -1,0 +1,28 @@
+<div class="container">
+  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
+  <div class='registration'>  
+    <h4>Enter your credentials</h4>
+    <div>
+      <%= f.email_field :email, placeholder: "email", :autofocus => true %></div>
+    <div>
+      <%= f.password_field :password, placeholder: 'password' %>
+    </div>
+    <div class="sign-in-view">
+      <div>
+        <%= f.submit "Sign in", id: 'reg-btn', class: 'btn' %>
+      </div>
+      <a class="toggle-reg" href="">Register</a>
+    </div>
+    <div class="reg-view">
+      <div class="reg-field">
+      <%= f.password_field :key_code, placeholder: 'invite code' %>
+      </div>
+      <div>
+      <%= f.submit "Register", id: 'reg-btn', class: 'btn' %>
+      </div>
+      <a class="toggle-reg" href="">Sign in</a>
+    </div>
+  </div>
+  <% end %>
+</div>
