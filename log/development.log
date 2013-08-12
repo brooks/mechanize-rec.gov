@@ -23215,3 +23215,400 @@ Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-11 19:43:11 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 19:43:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 20:12:28 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+AbstractController::Helpers::ClassMethods::MissingHelperError (Missing helper file helpers/recreate_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/home_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (28.3ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 20:12:32 -0700
+
+AbstractController::Helpers::ClassMethods::MissingHelperError (Missing helper file helpers/recreate_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/home_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 20:13:10 -0700
+
+RuntimeError (Circular dependency detected while autoloading constant RecreateHelper):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/home_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 20:13:11 -0700
+
+RuntimeError (Circular dependency detected while autoloading constant RecreateHelper):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/home_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 20:13:50 -0700
+
+AbstractController::Helpers::ClassMethods::MissingHelperError (Missing helper file helpers/recreate_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/home_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 20:13:51 -0700
+
+AbstractController::Helpers::ClassMethods::MissingHelperError (Missing helper file helpers/recreate_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/home_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 20:13:52 -0700
+
+AbstractController::Helpers::ClassMethods::MissingHelperError (Missing helper file helpers/recreate_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/home_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /Users/brooksmason/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 20:14:51 -0700
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 30ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 235ms (Views: 178.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/assets/yosemite.jpg" for 127.0.0.1 at 2013-08-11 20:14:52 -0700
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-11 20:15:30 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1059ms (Views: 1055.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 20:15:31 -0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/assets/yosemite.jpg" for 127.0.0.1 at 2013-08-11 20:15:32 -0700
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-11 20:15:42 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1024ms (Views: 1020.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/assets/yosemite.jpg" for 127.0.0.1 at 2013-08-11 20:15:43 -0700
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:46 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:47 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:47 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:47 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:47 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:47 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-11 20:15:47 -0700
+
+
+Started GET "/assets/yosemite.jpg" for 127.0.0.1 at 2013-08-11 20:15:47 -0700
