@@ -1,4 +1,4 @@
-Camping
-=======
+Yosemite-Bum
+============
 
-Automates reservations for NPS campsites
+This site is under development
