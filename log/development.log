@@ -33128,3 +33128,186 @@ Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-12 00:34:23 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-12 00:34:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLocations (20130812182231)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "campground" varchar(255), "park" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130812182231"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (35.9ms)[0m  [1mINSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["campground", "North Pines"], ["created_at", Mon, 12 Aug 2013 18:30:04 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:30:04 UTC +00:00], ["url", "http://www.recreation.gov/camping/North_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70927&topTabIndex=Search"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["campground", "Lower Pines"], ["created_at", Mon, 12 Aug 2013 18:30:05 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:30:05 UTC +00:00], ["url", "http://www.recreation.gov/camping/Lower_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70928&topTabIndex=Search"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["campground", "Upper Pines"], ["created_at", Mon, 12 Aug 2013 18:30:05 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:30:05 UTC +00:00], ["url", "http://www.recreation.gov/camping/Upper_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70925&topTabIndex=Search"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["campground", "Tuolumne Meadows"], ["created_at", Mon, 12 Aug 2013 18:30:05 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:30:05 UTC +00:00], ["url", "http://www.recreation.gov/camping/Tuolumne_Meadows/r/campgroundDetails.do?contractCode=NRSO&parkId=70926&topTabIndex=Search"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["campground", "North Pines"], ["created_at", Mon, 12 Aug 2013 18:30:33 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:30:33 UTC +00:00], ["url", "http://www.recreation.gov/camping/North_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70927&topTabIndex=Search"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["campground", "Lower Pines"], ["created_at", Mon, 12 Aug 2013 18:30:33 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:30:33 UTC +00:00], ["url", "http://www.recreation.gov/camping/Lower_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70928&topTabIndex=Search"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["campground", "Upper Pines"], ["created_at", Mon, 12 Aug 2013 18:30:33 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:30:33 UTC +00:00], ["url", "http://www.recreation.gov/camping/Upper_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70925&topTabIndex=Search"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["campground", "Tuolumne Meadows"], ["created_at", Mon, 12 Aug 2013 18:30:33 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:30:33 UTC +00:00], ["url", "http://www.recreation.gov/camping/Tuolumne_Meadows/r/campgroundDetails.do?contractCode=NRSO&parkId=70926&topTabIndex=Search"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "locations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  DELETE FROM "locations" WHERE "locations"."id" = ?  [["id", 1]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "locations" WHERE "locations"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "locations" WHERE "locations"."id" = ?  [["id", 3]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "locations" WHERE "locations"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "locations" WHERE "locations"."id" = ?  [["id", 5]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "locations" WHERE "locations"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "locations" WHERE "locations"."id" = ?  [["id", 7]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "locations" WHERE "locations"."id" = ?[0m  [["id", 8]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["campground", "North Pines"], ["created_at", Mon, 12 Aug 2013 18:31:27 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:31:27 UTC +00:00], ["url", "http://www.recreation.gov/camping/North_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70927&topTabIndex=Search"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["campground", "Lower Pines"], ["created_at", Mon, 12 Aug 2013 18:31:27 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:31:27 UTC +00:00], ["url", "http://www.recreation.gov/camping/Lower_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70928&topTabIndex=Search"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["campground", "Upper Pines"], ["created_at", Mon, 12 Aug 2013 18:31:27 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:31:27 UTC +00:00], ["url", "http://www.recreation.gov/camping/Upper_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70925&topTabIndex=Search"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("campground", "created_at", "park", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["campground", "Tuolumne Meadows"], ["created_at", Mon, 12 Aug 2013 18:31:27 UTC +00:00], ["park", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:31:27 UTC +00:00], ["url", "http://www.recreation.gov/camping/Tuolumne_Meadows/r/campgroundDetails.do?contractCode=NRSO&parkId=70926&topTabIndex=Search"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "locations"[0m
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations" ORDER BY "locations"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCampgrounds (20130812184420)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "campgrounds" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130812184420"]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateParks (20130812184437)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "parks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130812184437"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCampground Load (0.1ms)[0m  SELECT "campgrounds".* FROM "campgrounds"
+  [1m[36mPark Load (0.1ms)[0m  [1mSELECT "parks".* FROM "parks"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "parks" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 12 Aug 2013 18:48:53 UTC +00:00], ["name", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:48:53 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "campgrounds"[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "campgrounds" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.8ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "campground" varchar(255), "park" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.9ms)[0m  [1mDROP TABLE "parks"[0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "parks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.7ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mCampground Load (0.2ms)[0m  [1mSELECT "campgrounds".* FROM "campgrounds"[0m
+  [1m[35mPark Load (0.1ms)[0m  SELECT "parks".* FROM "parks"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "parks" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 12 Aug 2013 18:54:53 UTC +00:00], ["name", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 18:54:53 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20130812055551)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130812055551"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCampgrounds (20130812184420)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "campgrounds" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130812184420"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateParks (20130812184437)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "parks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130812184437"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCampground Load (0.1ms)[0m  SELECT "campgrounds".* FROM "campgrounds"
+  [1m[36mPark Load (0.1ms)[0m  [1mSELECT "parks".* FROM "parks"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "parks" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 12 Aug 2013 19:01:59 UTC +00:00], ["name", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 19:01:59 UTC +00:00]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCampground Load (0.1ms)[0m  SELECT "campgrounds".* FROM "campgrounds"
+  [1m[36mPark Load (0.1ms)[0m  [1mSELECT "parks".* FROM "parks"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.2ms)[0m  [1mDELETE FROM "parks" WHERE "parks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "parks" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 12 Aug 2013 19:04:28 UTC +00:00], ["name", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 19:04:28 UTC +00:00]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20130812055551)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130812055551"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCampgrounds (20130812184420)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "campgrounds" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "park_id" integer, "name" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130812184420"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateParks (20130812184437)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "parks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130812184437"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCampground Load (0.1ms)[0m  SELECT "campgrounds".* FROM "campgrounds"
+  [1m[36mPark Load (0.1ms)[0m  [1mSELECT "parks".* FROM "parks"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "parks" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 12 Aug 2013 19:05:41 UTC +00:00], ["name", "Yosemite"], ["updated_at", Mon, 12 Aug 2013 19:05:41 UTC +00:00]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "campgrounds" ("created_at", "name", "park_id", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 12 Aug 2013 19:05:41 UTC +00:00], ["name", "North Pines"], ["park_id", 1], ["updated_at", Mon, 12 Aug 2013 19:05:41 UTC +00:00], ["url", "http://www.recreation.gov/camping/North_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70927&topTabIndex=Search"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "campgrounds" ("created_at", "name", "park_id", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Aug 2013 19:05:41 UTC +00:00], ["name", "Lower Pines"], ["park_id", 1], ["updated_at", Mon, 12 Aug 2013 19:05:41 UTC +00:00], ["url", "http://www.recreation.gov/camping/Lower_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70928&topTabIndex=Search"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "campgrounds" ("created_at", "name", "park_id", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 12 Aug 2013 19:05:41 UTC +00:00], ["name", "Upper Pines"], ["park_id", 1], ["updated_at", Mon, 12 Aug 2013 19:05:41 UTC +00:00], ["url", "http://www.recreation.gov/camping/Upper_Pines/r/campgroundDetails.do?contractCode=NRSO&parkId=70925&topTabIndex=Search"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "campgrounds" ("created_at", "name", "park_id", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Aug 2013 19:05:41 UTC +00:00], ["name", "Tuolumne Meadows"], ["park_id", 1], ["updated_at", Mon, 12 Aug 2013 19:05:41 UTC +00:00], ["url", "http://www.recreation.gov/camping/Tuolumne_Meadows/r/campgroundDetails.do?contractCode=NRSO&parkId=70926&topTabIndex=Search"]]
+  [1m[35m (1.3ms)[0m  commit transaction

@@ -1,0 +1,19 @@
+<%= form_tag("/verify", method: "post") do %>
+  <div>
+    <%= select_tag "locations", options_from_collection_for_select(@campgrounds, "id", "name") %>
+  </div>
+  <div>
+    <div>Site instructions</div>
+    <%= text_field_tag :site, nil, placeholder: "sites", :autofocus => true %>
+  </div>
+  <div>
+    <%= date_field(nil, :arrival_date) %>
+  </div>
+  <div>
+    <%= date_field(nil, :departure_date) %>
+  
+  </div>
+  <div>
+    <%= submit_tag "Sign in", id: 'reg-btn', class: 'btn' %>
+  </div>
+<% end %>

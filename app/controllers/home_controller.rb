@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
-  before_filter :check_login_status, :except => [:login, :verify, :register]
+  # before_filter :check_login_status, :except => [:login, :verify, :register]
 
   def login
   end
@@ -24,7 +24,7 @@ class HomeController < ApplicationController
   end
 
   def index
-
+    @campgrounds = Campground.all
   end
 
   def check_login_status
