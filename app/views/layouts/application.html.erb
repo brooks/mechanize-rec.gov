@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Scheduler</title>
+  <title>Yosemite Bum</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body id="<%='sign-in' if request.path == "/"  %>">
-<% flash.each do |name, msg| %>
-  <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
-    <a class="close" data-dismiss="alert">&#215;</a>
-    <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
-  </div>
-<% end %>
+<body id="<%='sign-in' if request.path == "/"  %><%= 'home' if request.path != "/" %>">
 <%= yield %>
-
+<% if session[:user] %>
+  <header style="background-color: rgba(0,0,0,0.6); height: 50px; padding: 20px; float: right;"><a style="font-size: 20px; line-height: 50px;" href="/" class="inverse header-anchor">Logout</a></header>
+<% end %>
 </body>
 </html>

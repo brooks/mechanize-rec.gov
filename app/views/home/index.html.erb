@@ -1,19 +1,30 @@
-<%= form_tag("/verify", method: "post") do %>
-  <div>
-    <%= select_tag "locations", options_from_collection_for_select(@campgrounds, "id", "name") %>
-  </div>
-  <div>
-    <div>Site instructions</div>
-    <%= text_field_tag :site, nil, placeholder: "sites", :autofocus => true %>
-  </div>
-  <div>
-    <%= date_field(nil, :arrival_date) %>
-  </div>
-  <div>
-    <%= date_field(nil, :departure_date) %>
-  
-  </div>
-  <div>
-    <%= submit_tag "Sign in", id: 'reg-btn', class: 'btn' %>
-  </div>
-<% end %>
+<div class="form-container">
+  <h3 class="inverse">Yosemite Scheduler</h3>
+  <%= form_tag("/reservations", method: "post") do %>
+    <div>
+      <h5 class="inverse">Campground</h5>
+      <%= select_tag "locations", options_from_collection_for_select(@campgrounds, "id", "name") %>
+    </div>
+    <div>
+      <%= hidden_field_tag :site, nil, placeholder: "sites", :autofocus => true %>
+    </div>
+    <div>
+      <h5 class="inverse">Arrival Date</h5>
+      <%= date_field(nil, :arrival_date) %>
+    </div>
+    <div>
+      <h5 class="inverse">Departure Date</h5>
+      <%= date_field(nil, :departure_date) %>
+    </div>
+    <div>
+      <h5 class="inverse">Purchase Date & Time <a class="inverse" target="_blank" href="http://www.nps.gov/yose/planyourvisit/camping.htm">(nps beta)</a></h5>
+      <div>
+        <%= date_field_tag(:purchase_date, "2013-11-15") %>
+        <%= time_field_tag(:purchase_time, "07:05") %>
+      </div>
+    </div>
+    <div>
+      <%= submit_tag "Continue", id: 'reg-btn', class: 'btn' %>
+    </div>
+  <% end %>
+</div>

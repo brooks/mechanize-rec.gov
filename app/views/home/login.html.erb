@@ -1,7 +1,7 @@
 <div class="container">
   <div class='registration'>  
-    <h4>Enter your credentials</h4>
     <div class="sign-in-view">
+      <h4>Log in</h4>
       <%= form_tag("/verify", method: "post") do %>
       <div>
         <%= email_field_tag :email, nil, placeholder: "email", :autofocus => true %>
@@ -9,13 +9,27 @@
       <div>
         <%= password_field_tag :password, nil, placeholder: 'password' %>
       </div>
+      <% if flash[:error] %>
+        <div class="flash-error animated fadeIn">
+          <span><%= flash[:error] %></span>
+        </div>
+      <% end %>
+      <% if flash[:register] == true %>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('.sign-in-view').toggle();
+            $('.reg-view').toggle();
+          });
+        </script>
+      <% end %>
       <div>
-        <%= submit_tag "Sign in", id: 'reg-btn', class: 'btn' %>
+        <%= submit_tag "Sign in", id: 'sign-in-btn', class: 'btn' %>
       </div>
       <a class="toggle-reg" href="">Register</a>
       <% end %>
     </div>
     <div class="reg-view">
+      <h4>Register</h4>
       <%= form_tag("/register", method: "post") do %>
       <div>
         <%= email_field_tag :email, nil, placeholder: "email", :autofocus => true %>
@@ -26,8 +40,13 @@
       <div class>
       <%= password_field_tag :key_code, nil, placeholder: 'invite code' %>
       </div>
+      <% if flash[:error] %>
+        <div class="flash-error animated fadeIn">
+          <span><%= flash[:error] %></span>
+        </div>
+      <% end %>
       <div>
-      <%= submit_tag "Register", id: 'reg-btn', class: 'btn' %>
+        <%= submit_tag "Register", id: 'reg-btn', class: 'btn' %>
       </div>
       <a class="toggle-reg" href="">Sign in</a>
       <% end %>

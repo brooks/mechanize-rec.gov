@@ -6,5 +6,6 @@ $(document).ready(function(){
     e.preventDefault();
     $('.sign-in-view').toggle();
     $('.reg-view').toggle();
-  })
+    $('.flash-error').hide();
+  });
 });

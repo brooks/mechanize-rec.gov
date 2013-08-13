@@ -3,9 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
 #sign-in {
-  background: url("yosemite.jpg")
+  background: url("yosemite.jpg");
+}
+
+#home {
+  background: url("yosemite.jpg") fixed right;
 }
 
 .registration {
@@ -26,3 +29,51 @@
   display: none;
 }
 
+.flash-error {
+  color: red;
+  background: #BBBBBB;
+  border-radius: 3px;
+  height: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  span {
+    line-height: 28px;
+  }
+}
+
+.flash-notice {
+  color: green;
+  background: #BBBBBB;
+  border-radius: 3px;
+  height: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  span {
+    line-height: 28px;
+  }
+}
+
+.form-container {
+  padding: 50px;
+  background-color: rgba(0,0,0,0.6);
+  width: 300px;
+  position:fixed !important;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+.inverse {
+  color: white;
+}
+
+a.inverse {
+  color: white;
+}
+a.inverse:hover {
+  color: white;
+}
